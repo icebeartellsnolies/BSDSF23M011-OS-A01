@@ -1,0 +1,20 @@
+
+
+.TH MYGREP 3 "2025-09-21" "libmyutils" "Library functions"
+.SH NAME
+mygrep \- search for lines containing a substring in a file
+.SH SYNOPSIS
+.B int mygrep(FILE *fp, const char *search_str, char ***matches);
+.SH DESCRIPTION
+The \fBmygrep\fR function searches the file stream \fIfp\fR for lines
+that contain the substring \fIsearch_str\fR. Matching lines are
+duplicated into an array of strings, which is stored in \fImatches\fR.
+The caller is responsible for freeing the array and its elements.
+If there are no matches, \fImatches\fR is set to NULL and 0 is returned.
+On failure, -1 is returned.
+.SH RETURN VALUE
+Returns the number of matching lines found (which may be zero).
+On failure, returns -1.
+.SH AUTHOR
+Naimah Rehman <msnaimahrehman@gmail.com>
+

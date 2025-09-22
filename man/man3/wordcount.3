@@ -1,0 +1,19 @@
+
+
+.TH WORDCOUNT 3 "2025-09-21" "libmyutils" "Library functions"
+.SH NAME
+wordcount \- count lines, words, and characters in a file stream
+.SH SYNOPSIS
+.B int wordCount(FILE *file, int *lines, int *words, int *chars);
+.SH DESCRIPTION
+The \fBwordCount\fR function reads from the open file stream \fIfile\fR
+and counts the number of lines, words, and characters. The results are
+stored in the integers pointed to by \fIlines\fR, \fIwords\fR, and
+\fIchars\fR. The function resets the file pointer to the beginning
+before and after counting.
+If any argument is NULL or the file is invalid, the function returns -1.
+.SH RETURN VALUE
+Returns 0 on success. Returns -1 on failure.
+.SH AUTHOR
+Naimah Rehman <msnaimahrehman@gmail.com>
+

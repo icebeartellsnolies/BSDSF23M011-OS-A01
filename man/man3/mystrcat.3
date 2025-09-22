@@ -1,0 +1,18 @@
+
+
+.TH MYSTRCAT 3 "2025-09-21" "libmyutils" "Library functions"
+.SH NAME
+mystrcat \- concatenate two strings
+.SH SYNOPSIS
+.B int mystrcat(char *dest, const char *src);
+.SH DESCRIPTION
+The \fBmystrcat\fR function appends the string pointed to by \fIsrc\fR to the
+end of the string pointed to by \fIdest\fR. The destination buffer must be
+large enough to hold the resulting string. If either pointer is NULL, the
+function returns -1.
+.SH RETURN VALUE
+Returns the length of the resulting string in \fIdest\fR.
+On error, returns -1.
+.SH AUTHOR
+Naimah Rehman <msnaimahrehman@gmail.com>
+

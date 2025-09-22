@@ -1,0 +1,17 @@
+
+
+.TH MYSTRLEN 3 "2025-09-21" "libmyutils" "Library functions"
+.SH NAME
+mystrlen \- compute the length of a string
+.SH SYNOPSIS
+.B int mystrlen(const char *s);
+.SH DESCRIPTION
+The \fBmystrlen\fR function returns the number of characters in the string
+pointed to by \fIs\fR, excluding the terminating null byte ('\0').
+If \fIs\fR is NULL, the function returns -1.
+.SH RETURN VALUE
+On success, the length of the string is returned.
+On error (e.g., \fIs\fR is NULL), -1 is returned.
+.SH AUTHOR
+Naimah Rehman <msnaimahrehman@gmail.com>
+

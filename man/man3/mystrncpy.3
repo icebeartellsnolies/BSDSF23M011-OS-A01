@@ -1,0 +1,18 @@
+
+
+.TH MYSTRNCPY 3 "2025-09-21" "libmyutils" "Library functions"
+.SH NAME
+mystrncpy \- copy a string with maximum length
+.SH SYNOPSIS
+.B int mystrncpy(char *dest, const char *src, int n);
+.SH DESCRIPTION
+The \fBmystrncpy\fR function copies at most \fIn-1\fR characters from
+\fIsrc\fR into \fIdest\fR and ensures that the destination string is
+null-terminated. If either pointer is NULL or if \fIn\fR is less than
+or equal to zero, the function returns -1.
+.SH RETURN VALUE
+Returns the number of characters copied (not including the terminating null byte).
+On error, returns -1.
+.SH AUTHOR
+Naimah Rehman <msnaimahrehman@gmail.com>
+

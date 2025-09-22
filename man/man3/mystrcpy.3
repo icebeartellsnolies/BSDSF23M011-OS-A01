@@ -1,0 +1,17 @@
+
+
+.TH MYSTRCPY 3 "2025-09-21" "libmyutils" "Library functions"
+.SH NAME
+mystrcpy \- copy a string
+.SH SYNOPSIS
+.B int mystrcpy(char *dest, const char *src);
+.SH DESCRIPTION
+The \fBmystrcpy\fR function copies the string pointed to by \fIsrc\fR
+(including the terminating null byte) into the buffer pointed to by \fIdest\fR.
+If either pointer is NULL, the function returns -1.
+.SH RETURN VALUE
+Returns the number of characters copied (excluding the terminating null byte).
+On error, returns -1.
+.SH AUTHOR
+Naimah Rehman <msnaimahrehman@gmail.com>
+
